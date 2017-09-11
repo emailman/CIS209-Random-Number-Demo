@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.btnRandom = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(13, 13);
+            this.btnRandom.Location = new System.Drawing.Point(12, 75);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(159, 77);
             this.btnRandom.TabIndex = 0;
@@ -41,22 +42,35 @@
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(316, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Click the button below for a random number";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 273);
+            this.ClientSize = new System.Drawing.Size(357, 273);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRandom);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnRandom;
+        private System.Windows.Forms.Label label1;
     }
 }
 
